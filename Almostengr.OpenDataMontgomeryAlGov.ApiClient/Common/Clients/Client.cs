@@ -18,4 +18,7 @@ public abstract class Client
     }
 }
 
-
+public static class JoinOption{ 
+    public const string And = "AND";
+    public const string Or = "OR";
+}
