@@ -2,6 +2,7 @@ using Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common.Resources;
 
 namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations.Resources;
 
-public sealed class CodeViolationCountResource : CountResource
+public sealed class CodeViolationIdsResource : IdsResource
 {
+    
 }

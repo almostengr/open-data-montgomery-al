@@ -1,8 +1,10 @@
+using Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations.Resources;
+using Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common;
+
 namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations;
 
 public interface ICodeViolationClient
 {
-    Task<CodeViolationCountResource> GetCountAsync();
+    Task<CodeViolationCountResource> GetCountAsync(UrlQueryBuilder urlQuery);
+    Task<CodeViolationIdsResource> GetIdsAsync(UrlQueryBuilder urlQuery);
 }
-
-// https://gis.montgomeryal.gov/server/rest/services/HostedDatasets/Code_Violations/FeatureServer/0/query?outFields=*&where=1%3D1

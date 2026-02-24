@@ -6,14 +6,13 @@ about the portal can be found at
 [https://opendata.montgomeryal.gov](https://opendata.montgomeryal.gov).
 
 
-
 ## Implementation
 
 To make the endpoints available for your application, add the below to the Program.cs
 file in your application.
 
 ```csharp
-builder.Services.AddOpenDataMontgomeryAlServies();
+builder.Services.AddOpenDataMontgomeryAlServices();
 ```
 
 ### HttpClient
@@ -24,3 +23,8 @@ instance of ```HttpClient``` or through ```IHttpClientFactory```.
 ## License
 
 See LICENSE file for more information and the allowed usage of this project.
+
+## Contributions
+
+Any issues or feature requests should be submitted to the via the repository at 
+[https://github.com/almostengr/open-data-montgomery-al](https://github.com/almostengr/open-data-montgomery-al).

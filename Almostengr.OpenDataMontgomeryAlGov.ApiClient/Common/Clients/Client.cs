@@ -1,24 +1,29 @@
-namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common;
+using Microsoft.Extensions.Options;
+
+namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common.Clients;
 
 public abstract class Client
 {
-    public static string IncludeGeometry(bool include)
+    protected readonly OpenDataMontgomerySettings _appSettings;
+    protected readonly HttpClient _httpClient;
+
+    public Client(HttpClient httpClient, IOptions<OpenDataMontgomerySettings> options)
     {
-        return include ? string.Empty : "&returnGeometry=false";
+        _appSettings = options.Value;
+
+        _httpClient = httpClient;
+        _httpClient.Timeout = TimeSpan.FromSeconds(_appSettings.TimeOut);
+
+        if (!string.IsNullOrWhiteSpace(_appSettings.ApiKey) && !string.IsNullOrWhiteSpace(_appSettings.ApiToken))
+        {
+            _httpClient.DefaultRequestHeaders.Add(_appSettings.ApiKey, _appSettings.ApiToken);
+        }
     }
 
-    public static string IncludeCountOnly(bool include)
+    protected string BuildRoute(string baseUrl, UrlQueryBuilder urlQuery)
     {
-        return include ? "&returnCountOnly=true" : string.Empty;
+        ArgumentException.ThrowIfNullOrWhiteSpace(baseUrl);
+        
+        return $"{baseUrl}?f=json&outFields=*&outSR=4326&{urlQuery.Build()}";
     }
-
-    public static string IncludeIdsOnly(bool include)
-    {
-        return include ? "$returnIdsOnly=true" : string.Empty;
-    }
-}
-
-public static class JoinOption{ 
-    public const string And = "AND";
-    public const string Or = "OR";
 }

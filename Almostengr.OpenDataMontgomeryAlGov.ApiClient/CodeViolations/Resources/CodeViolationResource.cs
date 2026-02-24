@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
-using Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common;
+using Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common.Resources;
 
-namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations;
+namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations.Resources;
 
-public class CodeViolationResource : Resource
+public sealed class CodeViolationResource : Resource
 {
     public Attribute Attributes { get; set; }
     public Coordinates Geometry { get; set; }
