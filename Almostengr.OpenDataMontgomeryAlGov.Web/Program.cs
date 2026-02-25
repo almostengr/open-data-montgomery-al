@@ -15,9 +15,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-var openDataConfiguration = builder.Configuration.GetSection(nameof(OpenDataMontgomerySettings));
-
-builder.Services.AddOpenDataMontgomeryAlServices(openDataConfiguration);
+builder.Services.AddOpenDataMontgomeryAlServices(builder.Configuration);
 
 var app = builder.Build();
 
