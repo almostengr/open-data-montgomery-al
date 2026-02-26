@@ -1,4 +1,4 @@
-namespace Almostengr.OpenDataMontgomeryAlGov.Web.Models;
+namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.Web.Models;
 
 public class ErrorViewModel
 {

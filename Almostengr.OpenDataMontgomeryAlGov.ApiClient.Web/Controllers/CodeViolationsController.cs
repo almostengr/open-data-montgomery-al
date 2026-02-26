@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations;
 
-namespace Almostengr.OpenDataMontgomeryAlGov.Web.Controllers;
+namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.Web.Controllers;
 
-public class CodeViolationsController : Controller
+public class CodeViolationsController : TestController
 {
     private readonly ICodeViolationClient _codeViolationClient;
 

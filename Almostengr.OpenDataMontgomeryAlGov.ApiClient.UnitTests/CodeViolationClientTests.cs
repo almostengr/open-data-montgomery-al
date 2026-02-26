@@ -4,7 +4,7 @@ using System.Net;
 using Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common;
 using Almostengr.OpenDataMontgomeryAlGov.ApiClient.CodeViolations;
 
-namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.Tests;
+namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.UnitTests;
 
 public class CodeViolationClientTests : Tests
 {

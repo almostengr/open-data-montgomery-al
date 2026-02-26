@@ -4,7 +4,7 @@ using System.Net;
 using Microsoft.Extensions.Options;
 using Almostengr.OpenDataMontgomeryAlGov.ApiClient.Common;
 
-namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.Tests;
+namespace Almostengr.OpenDataMontgomeryAlGov.ApiClient.UnitTests;
 
 public abstract class Tests
 {

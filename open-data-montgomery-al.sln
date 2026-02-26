@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.OpenDataMontgomeryAlGov.ApiClient", "Almostengr.OpenDataMontgomeryAlGov.ApiClient\Almostengr.OpenDataMontgomeryAlGov.ApiClient.csproj", "{78EECABE-28B2-B1E8-6B7A-74CBD08831EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.OpenDataMontgomeryAlGov.ApiClient.Tests", "Almostengr.OpenDataMontgomeryAlGov.ApiClient.Tests\Almostengr.OpenDataMontgomeryAlGov.ApiClient.Tests.csproj", "{ECC90D61-7497-4BFE-B6B4-CCB873F634E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.OpenDataMontgomeryAlGov.ApiClient.UnitTests", "Almostengr.OpenDataMontgomeryAlGov.ApiClient.UnitTests\Almostengr.OpenDataMontgomeryAlGov.ApiClient.UnitTests.csproj", "{ECC90D61-7497-4BFE-B6B4-CCB873F634E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.OpenDataMontgomeryAlGov.Web", "Almostengr.OpenDataMontgomeryAlGov.Web\Almostengr.OpenDataMontgomeryAlGov.Web.csproj", "{495EF976-7E31-4EBE-81B7-D007406B05B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almostengr.OpenDataMontgomeryAlGov.ApiClient.Web", "Almostengr.OpenDataMontgomeryAlGov.ApiClient.Web\Almostengr.OpenDataMontgomeryAlGov.ApiClient.Web.csproj", "{495EF976-7E31-4EBE-81B7-D007406B05B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
