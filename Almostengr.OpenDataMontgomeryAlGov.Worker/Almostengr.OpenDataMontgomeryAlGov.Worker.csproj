@@ -10,4 +10,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.4" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Almostengr.OpenDataMontgomeryAlGov.ApiClient\Almostengr.OpenDataMontgomeryAlGov.ApiClient.csproj" />
+  </ItemGroup>
 </Project>

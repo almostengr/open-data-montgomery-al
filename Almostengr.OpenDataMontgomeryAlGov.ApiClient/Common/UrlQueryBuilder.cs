@@ -142,7 +142,7 @@ public class UrlQueryBuilder
 
     public string Build()
     {
-        if (_query.Length == 6)
+        if (_query.ToString() == "where=")
         {
             _query.Append("1=1");
         }

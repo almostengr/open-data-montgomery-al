@@ -22,8 +22,8 @@ public abstract class Client
 
     protected string BuildRoute(string baseUrl, UrlQueryBuilder urlQuery)
     {
-        ArgumentException.ThrowIfNullOrWhiteSpace(baseUrl);
-        
+        ArgumentException.ThrowIfNullOrWhiteSpace(baseUrl, nameof(baseUrl));
+
         return $"{baseUrl}?f=json&outFields=*&outSR=4326&{urlQuery.Build()}";
     }
 }
